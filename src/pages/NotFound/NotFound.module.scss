@@ -1,0 +1,73 @@
+@import 'SCSS/Global';
+
+div.errorContainer.errorPage {
+  margin-top: 0 !important;
+  height: 100% !important;
+
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  display: grid;
+  place-content: center;
+
+  background-color: #f1f2f4;
+
+  .error {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .errorColumn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 45px;
+  }
+
+  img {
+    width: 216px;
+  }
+}
+
+.errorHeading {
+  font-size: 70px;
+  font-weight: 500;
+  letter-spacing: 0.21px;
+  color: #303e48;
+  margin: 0 0 20px 0;
+}
+
+.errorText {
+  font-size: 16px;
+  font-weight: normal;
+  letter-spacing: 0.14px;
+  color: #303e48;
+  margin-top: 5px;
+}
+
+.errorButton {
+  display: flex;
+  flex-direction: column;
+  margin-top: 25px;
+}
+
+button.errorButton,
+.errorButton > button {
+  display: grid;
+}
+
+.logo-primary {
+  font-size: 20px;
+  font-weight: 800;
+  letter-spacing: 1.25px;
+  color: $dark-blue;
+}
+.logo-secondary {
+  font-size: 18px;
+  font-weight: 300;
+  letter-spacing: -0.72px;
+  color: $dark-gray;
+}

@@ -1,0 +1,189 @@
+/* --------------------------------- BUTTON --------------------------------- */
+button {
+  background-color: $dark-turquoise;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+  cursor: pointer;
+
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: -0.14px;
+  color: black;
+
+  padding: 11px;
+  height: auto;
+  width: auto;
+}
+
+// Check if the class is not an icon button
+button:disabled:not(:has(.not-icon-button)),
+button:hover:disabled:not(:has(.not-icon-button)),
+button:focus:disabled:not(:has(.not-icon-button)) {
+  background-color: $dark-turquoise-opacity;
+  color: $dark-gray;
+}
+
+// Hover state
+button:hover {
+  background-color: $dark-turquoise;
+}
+// Focus state
+button:focus {
+  background-color: $dark-turquoise;
+}
+// disabled state
+button:disabled {
+  cursor: not-allowed;
+  opacity: 0.43;
+}
+/* -------------------------------------------------------------------------- */
+
+
+/* ---------------------------- SECONDARY BUTTON ---------------------------- */
+button.secondary {
+  background-color: $light-gray;
+  border: solid 2px $dark-turquoise;
+  border-radius: 4px;
+  box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.08);
+
+  font-weight: 600;
+  letter-spacing: -0.28px;
+  color: #1a2837;
+
+  padding: 8px;
+}
+button.secondary:hover {
+  background-color: $light-gray;
+}
+button.secondary:focus {
+  background-color: $light-gray;
+}
+
+button.save,
+button.secondary.cancel {
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: -0.14px;
+
+  padding: 0;
+  height: 30px;
+  width: 76px;
+}
+button.secondary.cancel {
+  border: solid 1px $dark-gray;
+  color: $dark-gray;
+}
+/* -------------------------------------------------------------------------- */
+
+
+button.transparent-button,
+button.transparent-button:hover,
+button.transparent-button:focus,
+button.transparent-button:disabled,
+button.transparent-button:hover:disabled,
+button.transparent-button:focus:disabled,
+button.transparent-button:active {
+  background-color: transparent;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+}
+/* -------------------------------------------------------------------------- */
+
+
+/* ----------------------------- HEADER BUTTONS ----------------------------- */
+button.component-header-button,
+button.component-header-button:hover,
+button.component-header-button:focus,
+button.component-header-button:active {
+  background-color: transparent;
+  box-shadow: none;
+}
+
+.component-header-button {
+  color: $light-gray;
+  font-size: 16px;
+  font-weight: normal;
+
+  svg {
+    font-size: 14px;
+    margin-right: 6px;
+  }
+}
+/* -------------------------------------------------------------------------- */
+
+
+/* ------------------------------ FOOTER BUTTON ----------------------------- */
+button.footer-button,
+button.footer-button:hover,
+button.footer-button:focus,
+button.footer-button:active {
+  background-color: $light-gray;
+  border: solid 1px $dark-turquoise;
+  border-radius: 4px;
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+
+  color: $dark-blue;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: -0.72px;
+
+  svg {
+    padding-left: 12px;
+  }
+}
+/* -------------------------------------------------------------------------- */
+
+
+/* ------------------------------- ICON BUTTON ------------------------------ */
+.iconButton {
+  background-color: transparent;
+  color: $white;
+  height: 40px;
+  width: 40px;
+  padding: 8px;
+}
+
+a.not-icon-button,
+button.not-icon-button {
+  display: grid;
+  place-content: center;
+  background-color: transparent;
+  box-shadow: none;
+  color: $light-gray;
+}
+button.not-icon-button:hover {
+  background-color: transparent;
+}
+button.not-icon-button:active {
+  background-color: transparent;
+}
+button.not-icon-button:focus {
+  background-color: transparent;
+}
+button.not-icon-button:disabled,
+button.not-icon-button:disabled:hover,
+button.not-icon-button:disabled:focus {
+  background-color: transparent;
+  cursor: not-allowed;
+  opacity: 0.39;
+}
+
+a.groupIconButton,
+button.groupIconButton {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  svg:first-child {
+    padding: 0 2px 0 0;
+  }
+
+  svg:last-child {
+    font-size: 12px;
+    padding: 0 0 0 2px;
+  }
+}
+/* -------------------------------------------------------------------------- */

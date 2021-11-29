@@ -1,0 +1,54 @@
+/* ----------------------------- COLOR VARIABLES ---------------------------- */
+// TEXT
+$black: #000;
+
+// PRIMARY BG ON COMPONENTS
+$dark-blue: #1a2837;
+
+// SPARINGLY
+$dark-green: #243841;
+
+// Icons in Grid Rows
+$darker-gray: #616467;
+
+// ICONS AND BORDER AND TEXT
+$dark-gray: #999;
+// Look into adding opacity to hexes in variables with SCSS
+$dark-gray-opacity: #99999924;
+
+// BORDERS AND ICONS
+$medium-gray: #d0d1d3;
+
+// BUTTONS AND TEXT
+$light-gray: #fafafa;
+$lighter-gray: #f7faff;
+
+// BG, LOGO, ICONS, ETC.
+$white: #fff;
+
+// BUTTONS AND ICONS
+$light-turquoise: #cfeaef;
+$dark-turquoise: #78c4d0;
+// Look into adding opacity to hexes in variables with SCSS
+$dark-turquoise-opacity: #78c4d016;
+
+// TERTIARY BG
+$light-blue: #e2e8f2;
+
+// SUCCESS, WARNING AND ERROR
+$green: #59c364;
+$orange: #ea9145;
+$red: #f23e3e;
+
+// ACTIVE DOCUMENTS
+$baby-blue: #618beb;
+
+// LINKS
+$dark-royal-blue: #396ba3;
+/* -------------------------------------------------------------------------- */
+
+/* --------------------------------- ACTIVE! -------------------------------- */
+$active-bg-color: rgba(120, 196, 208, 0.08);
+$secondary-active-bg-color: rgba(120, 196, 208, 0.14);
+$hover-bg-color: rgba(208, 209, 211, 0.16);
+/* -------------------------------------------------------------------------- */

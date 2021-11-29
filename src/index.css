@@ -1,0 +1,17 @@
+/* ------------------- BORDER BOX SIZE (DONT CHANGE THIS ------------------- */
+*:not(svg):not(path) {
+  box-sizing: border-box;
+}
+/* -------------------------------------------------------------------------- */
+
+#root {
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+  box-sizing: border-box;
+}
+
+#root > div {
+  margin-top: 64px;
+  height: calc(100% - 64px);
+}

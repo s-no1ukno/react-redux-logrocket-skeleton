@@ -1,7 +1,7 @@
 import React from 'react'
 
 // * redux imports
-import { useAPI as useUserAPI } from 'features/user'
+// import { useAPI as useUserAPI } from 'features/user'
 
 // * Component imports
 
@@ -14,7 +14,7 @@ const Home = () => {
   COMPONENT STATE AND SETUP
   ------------------------------------------------------------------
   */
-  const { account } = useUserAPI()
+  // const { account } = useUserAPI()
 
   // * State
 
